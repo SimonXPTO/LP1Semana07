@@ -40,7 +40,14 @@ namespace PlayerStats
 
         }
 
-        
+        public void PlayGame(bool win)
+        {
+            playedGames++;
+            if (win)
+            {
+                wonGames++;
+            }
+        }
 
         public Player(string name)
         {
