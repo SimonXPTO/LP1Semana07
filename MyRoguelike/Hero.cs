@@ -19,7 +19,7 @@ namespace MyRoguelike
             }
         }
 
-        public int Level => (int)(XP / 1000) + 1;
+        public int Level =>(XP / 1000) + 1;
 
         public float MaxHealth => 100 + (Level - 1) * 20;
 
