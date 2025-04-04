@@ -1,5 +1,4 @@
-namespace BetterColorSpheres
-{
+namespace BetterColorSpheres{
     public class Sphere
     {
         private float radius;
