@@ -10,7 +10,17 @@ namespace PlayerStats
         public string Name { get; }
 
 
-        
+        public float HighScore
+        {
+            get => highScore;
+            set
+            {
+                if (value > highScore)
+                {
+                    highScore = value;
+                }
+            }
+        }
 
         public float WinRate
         {
