@@ -16,16 +16,6 @@ namespace BetterColorSpheres
             this.alpha = alpha;
         }
 
-        public Color(byte red, byte green, byte blue) : this(red, green, blue, 255) { }
-
-        public int GetGrey()=> (byte) (red + green + blue) / 3;
         
-        public int GetRed()=> red;
-
-        public int GetGreen()=> green;
-
-        public int GetBlue()=> blue;
-
-        public int GetAlpha()=> alpha;
     }
 }
