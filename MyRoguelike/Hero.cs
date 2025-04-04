@@ -21,7 +21,8 @@ namespace MyRoguelike
 
         public int Level => (int)(XP / 1000) + 1;
 
-        private float MaxHealth => 100 + (Level - 1) * 20;
+        public float MaxHealth => 100 + (Level - 1) * 20;
+
         public float Health
         {
             get => health;
@@ -41,5 +42,24 @@ namespace MyRoguelike
                 }
             }
         }
+
+        public void TakeDamage(float damage)
+        {
+            if (damage < 0)
+            {
+                return;
+            }
+            Health -= damage;
+            XP += (int)(damage / 20); 
+
+        }
+
+        public Hero(string name)
+        {
+            this.name = name;
+            this.xp = 0;
+            this.health = MaxHealth;
+        }
+
     }
 }
