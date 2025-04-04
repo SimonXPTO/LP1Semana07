@@ -16,7 +16,7 @@ namespace ColorSpheres
             sphere.Throw();
 
             Console.WriteLine($"The ball with the color {color1.GetGrey()}");
-            Console.WriteLine($"Was thrown: {sphere.GetTimesThrown()}");
+            Console.WriteLine($"thrown: {sphere.GetTimesThrown()}");
         }
     }
 }

@@ -18,28 +18,14 @@ namespace ColorSpheres
 
         public Color(byte red, byte green, byte blue) : this(red, green, blue, 255) { }
 
-        public int GetGrey()
-        {
-            return (red + green + blue) / 3;
-        }
-        public int GetRed()
-        {
-            return red;
-        }
+        public int GetGrey()=> (byte) (red + green + blue) / 3;
+        
+        public int GetRed()=> red;
 
-        public int GetGreen()
-        {
-            return green;
-        }
+        public int GetGreen()=> green;
 
-        public int GetBlue()
-        {
-            return blue;
-        }
+        public int GetBlue()=> blue;
 
-        public int GetAlpha()
-        {
-            return alpha;
-        }
+        public int GetAlpha()=> alpha;
     }
 }
