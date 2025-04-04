@@ -19,7 +19,14 @@ namespace ColorSpheres
             this.radius = 0;
         }
 
-        
+        public void Throw()
+        {
+            if (this.radius > 0)
+            {
+            this.timesThrown++;
+            }
+        }
+
         public int GetTimesThrown() => timesThrown;
     }
 }
